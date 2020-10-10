@@ -1,5 +1,4 @@
-name: Update packages
-
+name: Update lede
 on:
   repository_dispatch:
   release:
@@ -23,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [packages]     #target: [packages,packages-19.07]
+        target: [master]     #target: [packages,packages-19.07]
         
     steps:
     - name: Checkout
