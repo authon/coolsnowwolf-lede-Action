@@ -40,7 +40,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         chmod +x ${{matrix.target}}.sh
-        git clone -b ${{matrix.target}} https://github.com/authon/coolsnowwolf-lede.git${{matrix.target}}
+        git clone -b ${{matrix.target}} https://github.com/authon/coolsnowwolf-lede.git ${{matrix.target}}
         cd ${{matrix.target}}
         $GITHUB_WORKSPACE/${{matrix.target}}.sh
     - name: Upload
