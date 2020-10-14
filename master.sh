@@ -3,7 +3,7 @@
 # svn co https://github.com/coolsnowwolf/lede/trunk ./
 # rm -rf .svn
 
-git clone https://github.com/coolsnowwolf/lede/.git
+git clone https://github.com/coolsnowwolf/lede.git
 mv -f lede/* .
 rm -rf lede
 
